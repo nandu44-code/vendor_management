@@ -5,10 +5,8 @@ from .serializers import VendorSerializer, PurchaseOrderSerializer
 
 # Create your views here.
 class VendorViewset(viewsets.ModelViewSet):
-
     queryset = Vendor.objects.all
     serializer_class = VendorSerializer
-
 
 class PurchaseOrderViewset(models.ModelViewSet):
     queryset = Vendor.objects.all
