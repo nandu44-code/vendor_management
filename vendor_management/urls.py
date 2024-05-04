@@ -4,8 +4,8 @@ from .views import VendorViewset, PurchaseOrderViewset
 
 router = DefaultRouter()
 
-router.register('vendors', VendorViewset)
-router.register('purchase_orders', PurchaseOrderViewset)
+router.register('vendors', VendorViewset, basename='vendor')
+router.register('purchase_orders', PurchaseOrderViewset, basename='purchase_order')
 
 urlpatterns = [
     path('',include(router.urls))
