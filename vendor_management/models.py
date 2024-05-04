@@ -26,7 +26,7 @@ class PurchaseOrder(models.Model):
     quantity = models.IntegerField()
     status = models.CharField(max_length=20)
     quality_rating = models.FloatField(null=True, blank=True)
-    issue_date = models.DateTimeField()
+    issue_date = models.DateTimeField(auto_now_add=True)
     acknowledgment_date = models.DateTimeField(null=True, blank=True)
 
     def __str__(self):  
