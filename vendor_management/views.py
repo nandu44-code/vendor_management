@@ -9,5 +9,5 @@ class VendorViewset(viewsets.ModelViewSet):
     serializer_class = VendorSerializer
 
 class PurchaseOrderViewset(viewsets.ModelViewSet):
-    queryset = Vendor.objects.all()
+    queryset = PurchaseOrder.objects.all()
     serializer_class = PurchaseOrderSerializer
